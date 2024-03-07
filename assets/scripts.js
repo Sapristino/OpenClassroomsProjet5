@@ -19,8 +19,8 @@ $(document).ready(function() {
         "@context": "http://schema.org",
         "@type": "Person",
         "name": "Nina Carducci",
-        "url": "https://www.votresite.com",
-        "image": "https://www.votresite.com/assets/images/nina.webp",
+        "url": "https://sapristino.github.io/OpenClassroomsProjet5/",
+        "image": "https://sapristino.github.io/OpenClassroomsProjet5/assets/images/nina.webp",
         "description": `Nina Carducci est une photographe passionnée basée à Bordeaux. 
         Son travail consiste à capturer des moments précieux avec créativité et sensibilité, 
         en immortalisant les émotions, les lieux et les moments les plus importants de la vie de ses clients. 
