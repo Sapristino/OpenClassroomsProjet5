@@ -82,8 +82,10 @@ $(document).ready(function() {
     script.text = JSON.stringify(personData);
     document.querySelector('head').appendChild(script);
 
+    serviceData.forEach(service => {
     const serviceScript = document.createElement('script');
     serviceScript.type = 'application/ld+json';
-    serviceScript.text = JSON.stringify(serviceData);
+    serviceScript.text = JSON.stringify(service);
     document.querySelector('head').appendChild(serviceScript);
 });
+})
