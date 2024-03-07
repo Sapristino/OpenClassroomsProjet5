@@ -102,17 +102,17 @@ $(document).ready(function() {
     const LocalBusinessscript = document.createElement('script');
     LocalBusinessscript.type = 'application/ld+json';
     LocalBusinessscript.text = JSON.stringify(localBusinessData);
-    document.querySelector('head').appendChild(script);
+    document.querySelector('head').appendChild(LocalBusinessscript);
     
     const PersonScript = document.createElement('script');
     PersonScript.type = 'application/ld+json';
     PersonScript.text = JSON.stringify(personData);
-    document.querySelector('head').appendChild(script);
+    document.querySelector('head').appendChild(PersonScript);
 
     serviceData.forEach(service => {
     const ServiceScript = document.createElement('script');
     ServiceScript.type = 'application/ld+json';
     ServiceScript.text = JSON.stringify(service);
-    document.querySelector('head').appendChild(serviceScript);
+    document.querySelector('head').appendChild(ServiceScript);
 });
 })
