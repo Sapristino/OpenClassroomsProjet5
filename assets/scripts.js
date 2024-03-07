@@ -36,11 +36,6 @@ $(document).ready(function() {
         }
       };
       
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(localBusinessData);
-      document.querySelector('head').appendChild(script);
-
     // Script JSON-LD pour définir les informations de la personne pour Schema.org
     const personData = {
         "@context": "http://schema.org",
@@ -103,16 +98,21 @@ $(document).ready(function() {
             }
         },
     ];
+
+    const LocalBusinessscript = document.createElement('script');
+    LocalBusinessscript.type = 'application/ld+json';
+    LocalBusinessscript.text = JSON.stringify(localBusinessData);
+    document.querySelector('head').appendChild(script);
     
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(personData);
+    const PersonScript = document.createElement('script');
+    PersonScript.type = 'application/ld+json';
+    PersonScript.text = JSON.stringify(personData);
     document.querySelector('head').appendChild(script);
 
     serviceData.forEach(service => {
-    const serviceScript = document.createElement('script');
-    serviceScript.type = 'application/ld+json';
-    serviceScript.text = JSON.stringify(service);
+    const ServiceScript = document.createElement('script');
+    ServiceScript.type = 'application/ld+json';
+    ServiceScript.text = JSON.stringify(service);
     document.querySelector('head').appendChild(serviceScript);
 });
 })
