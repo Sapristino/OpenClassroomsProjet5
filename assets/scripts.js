@@ -14,6 +14,33 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 
+    const localBusinessData = {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci",
+        "image": "https://robinblgr.github.io/OpenClassroomsProject5/assets/images/nina.webp",
+        "telephone": "05 56 67 78 89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace Lorraine",
+          "addressLocality": "Bordeaux",
+          "addressRegion": "Aquitaine",
+          "addressCountry": "FR",
+          "postalCode": "33200"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "http://schema.org/Monday",
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      };
+      
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(localBusinessData);
+      document.querySelector('head').appendChild(script);
+
     // Script JSON-LD pour définir les informations de la personne pour Schema.org
     const personData = {
         "@context": "http://schema.org",
