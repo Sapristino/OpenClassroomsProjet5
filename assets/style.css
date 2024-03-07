@@ -22,10 +22,6 @@ h1, h2 {
 	font-size: 28px;
 }
 
-h3 {
-	font-size: 24px;
-}
-
 p {
 	font-size: 14px;
 }
@@ -122,8 +118,10 @@ p {
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -210,6 +208,10 @@ p {
 
 .service p {
 	font-size: 16px;
+}
+
+.service__price .price {
+	font-size: 24px;
 }
 
 #contact {
