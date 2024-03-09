@@ -378,8 +378,8 @@ input[type="submit"] {
 	}
 
 	.picture.left img {
-		max-width: 465px;
-		max-height: 465px;
+		max-width: 460px;
+		max-height: 460px;
 	}
 
 	.picture img {
@@ -390,6 +390,11 @@ input[type="submit"] {
 	.carousel-item img {
 		max-width: 650px;
 		max-height: 300px;
+	}
+
+	.picture.right img {
+		max-width: 410px;
+		max-height: 410px;
 	}
 
 }
