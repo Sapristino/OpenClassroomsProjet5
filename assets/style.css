@@ -1,3 +1,9 @@
+@font-face {
+	font-family: "Spectral";
+	src: url(./font/Spectral/Spectral-Bold.ttf);
+	src: url(./font/Spectral/Spectral-Italic.ttf);
+}
+
 body {
 	max-width: 1920px;
 	margin: auto;
