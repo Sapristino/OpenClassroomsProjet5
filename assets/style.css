@@ -144,7 +144,7 @@ nav a {
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
-	border-radius: 00%;
+	border-radius: 0;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -376,5 +376,21 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+
+	.picture.left img {
+		max-width: 465px;
+		max-height: 465px;
+	}
+
+	.picture img {
+		max-width: 270px;
+		max-height: 270px;
+	}
+
+	.carousel-item img {
+		max-width: 650px;
+		max-height: 300px;
+	}
+
 }
 
