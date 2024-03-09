@@ -1,7 +1,8 @@
 @font-face {
 	font-family: "Spectral";
-	src: url(./font/Spectral/Spectral-Bold.ttf);
-	src: url(./font/Spectral/Spectral-Italic.ttf);
+	src: url(./font/Spectral/Spectral-BoldItalic.ttf);
+	font-family: "Inter";
+	src: url(./font/Inter/static/Inter-Regular.ttf)
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
