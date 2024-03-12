@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.not-found {
+.NotFound {
     display: flex;
     flex-direction: column;
     gap: 139px;
     margin: 139px 0;
 }
-.h1__not-found {
+.NotFound__h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 288px;
@@ -16,7 +16,7 @@
     padding: 0;
 }
 
-.p__not-found {
+.NotFound__p {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
@@ -25,16 +25,30 @@
     padding: 0;
 }
 
+.NotFound__Link {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.NotFound__Link:visited {
+    color: black;
+}
+
 @media screen and (max-width: 768px) {
-    .not-found {
+    .NotFound {
         gap: 113px;
         margin: 113px 0;
     }
-    .h1__not-found {
+    .NotFound__h1 {
         font-size: 96px;
     }
 
-    .p__not-found {
+    .NotFound__p {
         font-size: 18px;
+    }
+
+    .NotFound__Link {
+        font-size: 14px;
     }
 }
