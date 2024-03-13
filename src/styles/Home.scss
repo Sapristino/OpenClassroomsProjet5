@@ -35,15 +35,13 @@
   }
   
   .content-container {
-    width: 86%;
+    width: 100%;
     margin: 0 auto;
     background-color: #f6f6f6;
     border-radius: 25px;
     margin-top: 43px;
     margin-bottom: 50px;
     padding: 20px;
-    width: 100%;
-    max-width: 1240px;
     height: auto;
     box-sizing: border-box;
     display: grid;
@@ -95,10 +93,11 @@
     padding: 0;
     gap: 20px;
     background-color: white;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+
   }
 
   .card {
-    width: 90%;
     height: 255px;
   }
 }
