@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.article-container {
+    margin: 0 auto;
+    width: 1240px;
+    height: 643px;
+}
+
+.slider-container {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.details-container {
+    position: relative;
+}
+
+.title-location h2 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+}
+
+.title-location p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.host {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.host p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+    margin-right: 10px;
+}
+
+.host img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+}
+
+.tags span {
+    min-width: 115px;
+    text-align: center;
+    line-height: 25px;
+    padding: 0 10px;
+    height: 25px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6060;
+    margin-bottom: 23px;
+}
+
+.rating {
+    position: absolute;
+    right: 0;
+    bottom: 45%;
+    display: flex;
+    gap: 4px;
+}
+
+.description-equipements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    background-color: #ff6060;
+    width: 47%;
+    height: 52px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.equipements {
+    background-color: #ff6060;
+    width: 47%;
+    height: 52px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    padding: 13px;
+    box-sizing: border-box;
+}
