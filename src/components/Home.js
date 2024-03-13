@@ -1,5 +1,6 @@
 import React from 'react';
 import annoncesData from '../data/annoncesData.json'
+import '../styles/Home.scss';
 
 function Card({ title, cover }) {
   return (

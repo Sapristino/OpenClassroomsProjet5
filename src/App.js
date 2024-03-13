@@ -4,10 +4,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
-import './styles/Header.scss';
-import './styles/Footer.scss';
-import './styles/NotFound.scss';
-import './styles/Home.scss';
 
 function App() {
   return (
