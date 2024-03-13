@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Article from './components/Article';
 import NotFound from './components/NotFound';
+import About from './components/About';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/article/:id' element={<Article />} />
+          <Route path='/about' element={<About />} />
           <Route path ="*" element={<NotFound />} /> {/* Route par défaut si aucune autre route ne correspond */}
         </Routes>
         <Footer />
