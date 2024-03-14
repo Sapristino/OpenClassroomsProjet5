@@ -1,0 +1,52 @@
+.image-container {
+    position: relative;
+    height: 223px;
+    margin-bottom: 38px;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(40%);
+    border-radius: 25px;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  
+@media screen and (max-width: 768px) {
+  
+    .image-container {
+      height: 111px;
+      margin-bottom: 20px;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      text-align: start;
+      font-size: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }

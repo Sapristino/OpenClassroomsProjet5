@@ -1,17 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-.article-container {
-    margin: 0 auto;
-    width: 1240px;
-    height: 643px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.slider-container {
-    width: 1240px;
-    height: 415px;
-    border-radius: 25px;
-    overflow: hidden;
-    margin-bottom: 30px;
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .details-container {
@@ -57,6 +52,10 @@
     height: 64px;
 }
 
+.tags-rating {
+    position: relative;
+}
+
 .tags {
     display: flex;
     gap: 10px;
@@ -80,38 +79,7 @@
 .rating {
     position: absolute;
     right: 0;
-    bottom: 45%;
+    top: 0;
     display: flex;
     gap: 4px;
-}
-
-.description-equipements {
-    display: flex;
-    justify-content: space-between;
-}
-
-.description {
-    background-color: #ff6060;
-    width: 47%;
-    height: 52px;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-    padding: 13px;
-    box-sizing: border-box;
-}
-
-.equipements {
-    background-color: #ff6060;
-    width: 47%;
-    height: 52px;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-    padding: 13px;
-    box-sizing: border-box;
 }
