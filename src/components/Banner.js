@@ -2,9 +2,9 @@ import React from 'react';
 
 import '../styles/components/Banner.scss'
 
-const Banner = ({ imageUrl, altText, overlayText }) => {
+const Banner = ({ imageUrl, altText, overlayText, imageClassName }) => {
   return (
-    <div className='image-container'>
+    <div className={`image-container ${imageClassName}`}>
       <img src={imageUrl} alt={altText} className='banner-image' />
       {overlayText && (
         <div className="overlay-text">

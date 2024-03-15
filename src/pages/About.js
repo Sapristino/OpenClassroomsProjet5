@@ -9,10 +9,11 @@ function About() {
     return (
       <div className='a-propos-container'>
           <Banner 
-            imageUrl='/assets/image-a-propos.png' 
+            imageUrl='/assets/image-a-propos.png'
+            imageClassName='about' 
             altText='paysage pour la bannière de la page à propos'>
           </Banner>        
-        <div className='dropdown-global-container'>
+        <div className='dropdown-global-container-about'>
           <Dropdown 
             title='Fiabilité'
             containerClassName='about'

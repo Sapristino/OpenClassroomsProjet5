@@ -11,7 +11,8 @@ function Home() {
   return (
     <div className="home-container">
           <Banner 
-            imageUrl='/assets/image-accueil.png' 
+            imageUrl='/assets/image-accueil.png'
+            imageClassName='home' 
             altText='paysage pour la bannière de la page Home' 
             overlayText={['Chez vous,', ' partout et ailleurs']}>
           </Banner>        

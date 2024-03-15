@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+.dropdown-toggle {
+    width: 100%;
+    font-size: 24px;
+}
+
 .dropdown-content {
     background-color: #f6f6f6;
     font-family: 'Montserrat', sans-serif;
@@ -38,12 +43,24 @@
 .dropdown-container.article {
     width: 100%;
 }
-.dropdown-toggle.article {
-    width: 100%;
-    font-size: 24px;
-}
 
-@media screen and (max-width: 768px) {
+  //Dropdown Section About //
+
+  .dropdown-global-container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .dropdown-container.about {
+    width: 85%;
+  }
+
+
+  //Media Queries Mobile//
+
+  @media screen and (max-width: 768px) {
 
     .description-equipements {
         flex-direction: column;
@@ -54,20 +71,18 @@
         font-size: 16px;
     }
   
-    .dropdown-toggle.article {
+    .dropdown-toggle {
         font-size: 13px; 
         height: 30px;
     }
 
-    .dropdown-content.article {
+    .dropdown-content {
         font-size: 12px;
         line-height: 18.67px;
+        padding: 10px;
     }
-
-
+    
+    .dropdown-global-container-about {
+        gap: 20px;
+      }
   }
-
-  //Dropdown Section About //
-
-  
-

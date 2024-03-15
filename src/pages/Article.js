@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 import NotFound from './NotFound';
-import ArticleSlider from '../components/Slider';
 import HouseDetails from '../components/HouseDetails';
+import Carousel from '../components/Carousel';
 
 import annoncesData from '../data/annoncesData.json';
 
@@ -20,10 +20,7 @@ function Article() {
 
   return (
     <div className='article-container'>
-        <ArticleSlider 
-            pictures={annonce.pictures} 
-            title={annonce.title} 
-        />
+        <Carousel pictures={annonce.pictures} />
 
         <HouseDetails
             title={annonce.title}
