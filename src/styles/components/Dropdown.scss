@@ -1,0 +1,73 @@
+.dropdown-toggle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    height: 52px;
+    background-color: #ff6060;
+    border-radius: 5px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.dropdown-content {
+    background-color: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.67px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.arrow-icon {
+    font-size: 24px;
+}
+
+// Dropdown Section Article //
+
+.description-equipements {
+    display: flex;
+    width: 100%;
+    gap: 60px;
+}
+
+.dropdown-container.article {
+    width: 100%;
+}
+.dropdown-toggle.article {
+    width: 100%;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .description-equipements {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .arrow-icon {
+        font-size: 16px;
+    }
+  
+    .dropdown-toggle.article {
+        font-size: 13px; 
+        height: 30px;
+    }
+
+    .dropdown-content.article {
+        font-size: 12px;
+        line-height: 18.67px;
+    }
+
+
+  }
+
+  //Dropdown Section About //
+
+  
+

@@ -9,36 +9,44 @@ const HouseDetails = ({ title, location, host, tags, rating, description, equipm
   return (
     
     <div className='details-container'>
-
-        <div className='title-location'>
-            <h2>{title}</h2>
-            <p>{location}</p>
-        </div>
-
-        <div className='host'>
-            <div className='name'>
-                <p>{host.name.split(' ')[0]}</p>
-                <p>{host.name.split(' ')[1]}</p>
+        <div className='first-bloc'>
+            <div className='title-location-tags'>
+                <h2>{title}</h2>
+                <p>{location}</p>
+                <div className='tags'>
+                    {tags.map((tag, index) => (
+                    <span key={index}>{tag}</span>
+                    ))}
+                </div>
             </div>
-            <img src={host.picture} alt={host.name} />
-        </div>
 
-        <div className='tags-rating'>
-            <div className='tags'>
-                {tags.map((tag, index) => (
-                <span key={index}>{tag}</span>
-                ))}
-            </div>
-            <div className='rating'>
-                <Rating rating={rating} />
+            <div className='host-rating'>
+                <div className='host'>
+                    <div className='name'>
+                        <p>{host.name.split(' ')[0]}</p>
+                        <p>{host.name.split(' ')[1]}</p>
+                    </div>
+                    <img src={host.picture} alt={host.name} />
+                </div>
+                <div className='rating'>
+                    <Rating rating={rating} />
+                </div>
             </div>
         </div>
 
         <div className='description-equipements'>
-            <Dropdown title='Description'>
+            <Dropdown 
+                title='Description' 
+                containerClassName='article'
+                toggleCLassName='article'
+                contentClassName='article'>
                 <p>{description}</p>
             </Dropdown>
-            <Dropdown title='Équipements'>
+            <Dropdown 
+                title='Équipements' 
+                containerClassName='article'
+                toggleCLassName='article'
+                contentClassName='article'>
                 <ul>
                     {equipments.map((equipement, index) => (
                     <li key={index}>{equipement}</li>

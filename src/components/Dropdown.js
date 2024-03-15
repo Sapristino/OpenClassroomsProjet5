@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
-const Dropdown = ({ title, children }) => {
+import '../styles/components/Dropdown.scss'
+
+
+const Dropdown = ({ title, children, containerClassName, toggleCLassName, contentClassName }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -15,14 +18,14 @@ const Dropdown = ({ title, children }) => {
   };
 
   return (
-    <div className="dropdown-container">
-      <div className="dropdown-toggle">
+    <div className={`dropdown-container ${containerClassName}`}>
+      <div className={`dropdown-toggle ${toggleCLassName}`}>
         {title}
-        <span className="arrow-icon" onClick={toggleDropdownIcon}>
+        <span className="arrow-icon" onClick={toggleDropdownIcon}> 
           {isOpen ? <FaAngleDown /> : <FaAngleUp />}
         </span>
       </div>
-      {isOpen && <div className="dropdown-content">{children}</div>}
+      {isOpen && <div className={`dropdown-content ${contentClassName}`}>{children}</div>}
     </div>
   );
 };

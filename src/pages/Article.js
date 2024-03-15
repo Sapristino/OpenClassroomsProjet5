@@ -9,6 +9,7 @@ import annoncesData from '../data/annoncesData.json';
 
 import '../styles/pages/Article.scss';
 
+
 function Article() {
     const { id } = useParams();
     const annonce = annoncesData.find(item => item.id === id);
