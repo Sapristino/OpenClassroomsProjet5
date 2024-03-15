@@ -1,0 +1,30 @@
+.home-container {
+  width: 90%;
+  margin: 0 auto;
+}
+    
+.content-container {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 50px;
+  padding: 50px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .content-container {
+    padding: 0;
+    gap: 20px;
+    background-color: white;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  }
+
+  .card {
+    height: 255px;
+  }
+}

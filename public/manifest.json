@@ -6,6 +6,12 @@
       "src": "assets/LOGO.png",
       "sizes": "145x47 210x68",
       "type": "image/png"
+    },
+
+    {
+      "src": "assets/LogoNav.ico",
+      "size": "16x16 32x32",
+      "type": "image/ico"
     }
   ],
   

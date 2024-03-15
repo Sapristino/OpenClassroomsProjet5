@@ -1,0 +1,63 @@
+.image-container {
+  position: relative;
+  height: 223px;
+  margin-bottom: 38px;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+  
+.home img{
+  filter: brightness(40%);
+}
+
+.about img{
+  filter: brightness(70%);
+}
+
+.overlay-text {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text span {
+  white-space: nowrap;
+}
+
+  
+@media screen and (max-width: 768px) {
+  
+  .image-container {
+    height: 111px;
+    margin-bottom: 20px;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    text-align: start;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
