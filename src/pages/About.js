@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Dropdown from '../components/Dropdown';
 
-import '../styles/pages/About.scss';
+import '../styles/css/main.css';
 
 
 function About() {

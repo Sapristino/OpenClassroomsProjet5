@@ -1,0 +1,62 @@
+header {
+    @include FlexContainer(row, nowrap, center, center);
+    width: 86%;
+    height: 4.25em;
+    margin: 0 auto;
+    margin-top: 2.8em;
+    margin-bottom: 3.125em;
+}
+
+.logo {
+    float: left;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar-ul {
+    @include FlexContainer;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__link {
+    @include MainPolice(black, 1.5em, 500);
+    margin-left: 3.56em;
+}
+
+.navbar__link a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__link a:hover {
+    padding-bottom: 0.1em;
+    border-bottom: solid 0.125em black;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 3em;
+        margin-top: 1.25em;
+        margin-bottom: 1.7em;
+    }
+
+    .logo img{
+        width: 9em;
+        height: 3em;
+    }
+
+    .navbar__link {
+        margin-left: 1.625em; 
+        font-size: 0.75em;
+        white-space: nowrap;
+    }
+
+    .navbar__link a:hover {
+        border-bottom: solid 0.1em black;
+    }
+    
+}

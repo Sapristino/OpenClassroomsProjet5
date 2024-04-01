@@ -1,0 +1,103 @@
+.dropdown-toggle {
+    @include FlexContainer(row, nowrap, space-between, center);
+    @include MainPolice(white);
+    @include MainColor(background-color);
+    height: 3.25em;
+    border-radius: 0.3em;
+    padding: 0 1em;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.dropdown-content {
+    @include DropDownColor;
+    @include MainPolice (black, 1.125em, 400);
+    line-height: 1.60em;
+    width: 100%;
+    box-sizing: border-box;
+    transform: scaleY(0);
+    transform-origin: top;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.arrow-icon {
+    width: 1em;
+    height: 1em;
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+  }
+
+.open {
+    padding: 1.25em;
+    height: auto;
+    transform: scaleY(1);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease, height 0.5s ease, padding 0.5s ease;
+}
+
+.close {
+    padding: 0 1.25em;
+    height: 0;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease, height 0.3s ease, padding 0.5s ease;
+}
+// Dropdown Section Article //
+
+.description-equipements {
+    @include FlexContainer;
+    width: 100%;
+    gap: 3.75em;
+}
+
+.dropdown-container.article {
+    width: 100%;
+}
+
+  //Dropdown Section About //
+
+  .dropdown-global-container-about {
+    @include FlexContainer (column, $align: center);
+    gap: 1.875em;
+  }
+
+  .dropdown-container.about {
+    width: 85%;
+  }
+
+
+// ********** MEDIA QUERIES MOBILE ********** //
+
+  @media screen and (max-width: 768px) {
+
+    .description-equipements {
+        @include FlexContainer (column);
+        gap: 1.25em;
+    }
+
+    .arrow-icon {
+        font-size: 1em;
+    }
+  
+    .dropdown-toggle {
+        font-size: 0.8em;
+        height: 1.875em;
+    }
+
+    .dropdown-content {
+        font-size: 0.75em;
+        line-height: 1.16em;
+        padding: 0.625em;
+    }
+    
+    .dropdown-global-container-about {
+        gap: 1.25em
+      }
+  }

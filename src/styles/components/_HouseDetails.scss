@@ -1,0 +1,110 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.first-bloc {
+    @include FlexContainer(row, nowrap, space-between, baseline);
+    margin-bottom: 1.57em;
+}
+
+.title-location-tags h2 {
+    @include MainPolice(black, 2.25em, 500);
+    @include MainColor (color);
+    margin: 0;
+}
+
+.title-location-tags p {
+    @include MainPolice (black, 1.125em, 500);
+    margin: 0;
+    margin-bottom: 1.25em;
+}
+
+.host-rating {
+    @include FlexContainer (column, nowrap, flex-start, end);
+    gap: 1.57em;
+}
+
+.host {
+    @include FlexContainer (row, nowrap, flex-start, center);
+}
+.host p {
+    @include MainPolice (black, 1.125em, 500);
+    @include MainColor (color);
+    margin: 0;
+    margin-right: 0.625em;
+    text-align: right;
+}
+
+.host img {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+}
+
+.tags {
+    @include FlexContainer (row, wrap);
+    gap: 0.625em;
+}
+
+.tags span {
+    @include FlexContainer (row, nowrap, center, center);
+    @include MainPolice (white, 0.875em);
+    @include MainColor (background-color);
+    padding: 0 0.625em;
+    min-width: 8em;
+    height: 1.6em;
+    border-radius: 0.625em;
+    box-sizing: border-box;
+}
+
+.rating {
+    @include FlexContainer;
+    gap: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .first-bloc {
+        @include FlexContainer (column);
+        margin-bottom: 1.56em;
+    }
+
+    .title-location-tags h2 {
+        font-size: 1.125em;
+    }
+    
+    .title-location-tags p { 
+        font-size: 0.875em;
+        margin-bottom: 0.625em;
+    }
+
+    .host-rating {
+        @include FlexContainer (row-reverse, space-between, center);
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .host p {
+        font-size: 0.75em;
+        margin-right: 0.625em;
+    }
+    
+    .host img {
+        width: 2em;
+        height: 2em;
+    }
+
+    .tags span {
+        min-width: 5.25em;
+        height: 1.125em;
+        border-radius: 0.3125em;
+        font-size: 0.625em;
+    }
+  }
+

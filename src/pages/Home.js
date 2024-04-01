@@ -3,7 +3,7 @@ import Banner from '../components/Banner';
 import Card from '../components/Card';
 import annoncesData from '../data/annoncesData.json';
 
-import '../styles/pages/Home.scss';
+import '../styles/css/main.css';
 
 
 

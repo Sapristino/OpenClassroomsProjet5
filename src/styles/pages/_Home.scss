@@ -5,12 +5,12 @@
     
 .content-container {
   background-color: #f6f6f6;
-  border-radius: 25px;
+  border-radius: 1.57em;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 50px;
-  padding: 50px;
+  gap: 3.125em;
+  padding: 3.125em;
 }
 
 
@@ -19,12 +19,12 @@
 
   .content-container {
     padding: 0;
-    gap: 20px;
+    gap: 1.25em;
     background-color: white;
     grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
   }
 
   .card {
-    height: 255px;
+    height: 16em
   }
 }

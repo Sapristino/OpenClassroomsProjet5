@@ -7,7 +7,7 @@ import Carousel from '../components/Carousel';
 
 import annoncesData from '../data/annoncesData.json';
 
-import '../styles/pages/Article.scss';
+import '../styles/css/main.css';
 
 
 function Article() {
@@ -20,7 +20,7 @@ function Article() {
 
   return (
     <div className='article-container'>
-        <Carousel pictures={annonce.pictures} />
+        <Carousel images={annonce.pictures} />
 
         <HouseDetails
             title={annonce.title}

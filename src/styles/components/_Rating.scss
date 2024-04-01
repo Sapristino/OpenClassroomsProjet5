@@ -1,5 +1,5 @@
 .star-filled {
-    color: #ff6060;
+    @include MainColor(color);
 }
 
 .star-empty {

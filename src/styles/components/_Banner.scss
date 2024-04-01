@@ -1,0 +1,56 @@
+.image-container {
+  @include FlexContainer(row, nowrap, center, center);
+  position: relative;
+  overflow: hidden;
+  height: 14em;
+  margin-bottom: 2.4em;
+  border-radius: 1.6em;
+  box-shadow: 0.1em 0.25em 0.35em rgba(0, 0, 0, 0.3);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 1.6em;
+}
+  
+.home img{
+  filter: brightness(40%);
+}
+
+.about img{
+  filter: brightness(70%);
+}
+
+.overlay-text {
+  @include MainPolice(white, 3em);
+  @include FlexContainer(row, wrap);
+  @include AbsolutePosition;
+  gap: 0.75em;
+  padding: 0.625em;
+  text-shadow: 0.2em 0.2em 0.35em rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text span {
+  white-space: nowrap;
+}
+
+// ********** MEDIA QUERIES MOBILE ********** //
+  
+@media screen and (max-width: 768px) {
+  
+  .image-container {
+    height: 7em;
+    margin-bottom: 1.25em;
+  }
+
+  .overlay-text {
+    @include FlexContainer(column);
+    @include AbsolutePosition($top: 50%, $left: 1em);
+    transform: translateY(-50%);
+    text-align: start;
+    font-size: 1.5em;
+
+  }
+  
+}

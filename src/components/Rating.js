@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/components/Rating.scss';
+import '../styles/css/main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 

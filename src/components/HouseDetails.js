@@ -3,7 +3,7 @@ import React from 'react';
 import Rating from './Rating';
 import Dropdown from './Dropdown';
 
-import '../styles/components/HouseDetails.scss'
+import '../styles/css/main.css';
 
 const HouseDetails = ({ title, location, host, tags, rating, description, equipments }) => {
   return (
