@@ -1,0 +1,47 @@
+.NotFound {
+    @include FlexContainer (column);
+    gap: 8.7em;
+    margin: 8.7em 0;
+}
+.NotFound__h1 {
+    @include MainPolice (black, 18em);
+    @include MainColor (color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.NotFound__p {
+    @include MainPolice (black, 2.25em, 500);
+    @include MainColor (color);
+    text-align: center;
+    margin: 0 7%;
+    padding: 0;
+}
+
+.NotFound__Link {
+    @include MainPolice(black, 1.125em, 400);
+    text-align: center;
+}
+
+.NotFound__Link:visited {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .NotFound {
+        gap: 7em;
+        margin: 7em 0;
+    }
+    .NotFound__h1 {
+        font-size: 6em;
+    }
+
+    .NotFound__p {
+        font-size: 1.125em;
+    }
+
+    .NotFound__Link {
+        font-size: 0.875em;
+    }
+}

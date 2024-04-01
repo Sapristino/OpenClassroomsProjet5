@@ -1,0 +1,32 @@
+@mixin MainPolice($color: black, $size: 18px, $weight: bold) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $weight;
+    color: $color;
+    font-size: $size;
+}
+
+@mixin MainColor($property, $color: #ff6060) {
+    #{$property}: $color;
+}
+
+@mixin DropDownColor($color: #f6f6f6) {
+    background-color: $color;
+}
+
+@mixin FlexContainer($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+  @mixin AbsolutePosition($top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+  
+  

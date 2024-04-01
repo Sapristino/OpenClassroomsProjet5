@@ -1,0 +1,42 @@
+body, footer {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    @include FlexContainer(column, nowrap, center, center);
+    background-color: black;
+    height: 13em;
+    margin-top: 3.125em
+}
+
+.footer__logo {
+    width: 7.625em;
+    height: 2.5em;
+    margin-bottom: 1.25em;
+    filter: brightness(0) invert(1);
+}
+
+.footer__copyright {
+    @include MainPolice (white, 1.5em, 400);
+    text-align: center;
+}
+
+.footer__copyright span{
+    margin-right: 0.3em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .footer {
+        margin-top: 1.25em;
+    }
+    .footer__copyright {
+        @include FlexContainer(column);   
+    }
+
+    .footer__copyright {
+        font-size: 0.75em
+    }
+}

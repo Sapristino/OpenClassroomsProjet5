@@ -4,7 +4,5 @@
 }
   
 .dropdown-global-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include FlexContainer(column, $align: center);
 }

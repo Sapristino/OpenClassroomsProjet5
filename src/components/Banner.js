@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../styles/components/Banner.scss'
+import '../styles/css/main.css'
 
 const Banner = ({ imageUrl, altText, overlayText, imageClassName }) => {
   return (
