@@ -7,21 +7,16 @@ import '../styles/css/main.css'
 const Dropdown = ({ title, children, containerClassName, toggleCLassName, contentClassName }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
+  const toggleDropdown = (e) => {
+    if (e) e.stopPropagation();
     setIsOpen(!isOpen);
-  };
-
-  const toggleDropdownIcon = (e) => {
-    e.stopPropagation(); // Empêche la propagation de l'événement de clic de l'icône vers le conteneur
-
-    toggleDropdown(); // Appelle la fonction de bascule du dropdown
   };
 
   return (
     <div className={`dropdown-container ${containerClassName}`}>
       <div className={`dropdown-toggle ${toggleCLassName}`}>
         {title}
-        <span className={`arrow-icon ${isOpen ? '' : 'rotate'}`} onClick={toggleDropdownIcon}> 
+        <span className={`arrow-icon ${isOpen ? '' : 'rotate'}`} onClick={toggleDropdown}> 
           <FaAngleDown />
         </span>
       </div>
