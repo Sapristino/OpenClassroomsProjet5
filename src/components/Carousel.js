@@ -16,7 +16,7 @@ function Carousel({ images }) {
   };
 
   return (
-    <div className={`carousel-container ${isSingleImage ? 'single-image' : ''}`}>
+    <div className="carousel-container">
       <img src={images[currentSlide]} alt="Logement" className="carousel-image" />
       {!isSingleImage && (
         <div className="carousel-controls">

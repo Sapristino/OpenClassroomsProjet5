@@ -85,7 +85,7 @@ p {
     }
 
     .host-rating {
-        @include FlexContainer (row-reverse, space-between, center);
+        @include FlexContainer (row-reverse, nowrap, space-between, center);
         width: 100%;
         margin-top: 1em;
     }
@@ -102,7 +102,7 @@ p {
 
     .tags span {
         min-width: 5.25em;
-        height: 1.125em;
+        height: 1.75em;
         border-radius: 0.3125em;
         font-size: 0.625em;
     }

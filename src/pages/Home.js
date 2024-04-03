@@ -5,8 +5,6 @@ import annoncesData from '../data/annoncesData.json';
 
 import '../styles/css/main.css';
 
-
-
 function Home() {
   return (
     <div className="home-container">
