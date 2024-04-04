@@ -54,6 +54,7 @@
   .image-container {
     height: 7em;
     margin-bottom: 1.25em;
+    border-radius: 0.625em;
   }
   .overlay-text {
     display: flex;
@@ -76,6 +77,15 @@
   width: 100%;
   height: 21.25em;
   border-radius: 0.625em;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
 }
 
 .card-image {
@@ -284,6 +294,9 @@
   .dropdown-global-container-about {
     gap: 0.5em;
   }
+  .dropdown-container.about {
+    width: 100%;
+  }
 }
 body, footer {
   margin: 0;
@@ -372,15 +385,19 @@ header {
   font-weight: 500;
   color: black;
   font-size: 1.5em;
-  margin-left: 3.56em;
+  margin-left: 2em;
 }
 
 .navbar__link a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 1em;
   text-decoration: none;
   color: black;
 }
 
-.navbar__link a:hover {
+.active-link {
   padding-bottom: 0.1em;
   border-bottom: solid 0.125em black;
 }
@@ -399,9 +416,6 @@ header {
     margin-left: 1.625em;
     font-size: 0.75em;
     white-space: nowrap;
-  }
-  .navbar__link a:hover {
-    border-bottom: solid 0.1em black;
   }
 }
 ul {

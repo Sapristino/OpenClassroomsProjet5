@@ -1,5 +1,5 @@
 import React from'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import '../styles/css/main.css';
 
@@ -11,8 +11,18 @@ function Header() {
             </div>
             <nav className='navbar'>
                 <ul className='navbar-ul'>
-                    <li className='navbar__link'><Link to='/'>Accueil</Link></li>
-                    <li className='navbar__link'><Link to='/about'>A propos</Link></li>
+                    <li className='navbar__link'>
+                        <NavLink to='/'
+                            className={({ isActive }) => (isActive ? 'navbar__link active-link' : 'navbar__link')}>
+                            Accueil
+                        </NavLink>
+                    </li>
+                    <li className='navbar__link'>
+                        <NavLink to='/about' 
+                            className={({ isActive }) => (isActive ? 'navbar__link active-link' : 'navbar__link')}>
+                            A propos
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
