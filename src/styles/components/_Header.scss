@@ -24,15 +24,16 @@ header {
 
 .navbar__link {
     @include MainPolice(black, 1.5em, 500);
-    margin-left: 3.56em;
+    margin-left: 2em;
 }
 
 .navbar__link a {
+    @include MainPolice(black, 1em, 500);
     text-decoration: none;
     color: black;
 }
 
-.navbar__link a:hover {
+.active-link {
     padding-bottom: 0.1em;
     border-bottom: solid 0.125em black;
 }
@@ -53,10 +54,6 @@ header {
         margin-left: 1.625em; 
         font-size: 0.75em;
         white-space: nowrap;
-    }
-
-    .navbar__link a:hover {
-        border-bottom: solid 0.1em black;
     }
     
 }
